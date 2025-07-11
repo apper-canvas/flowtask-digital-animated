@@ -9,11 +9,10 @@ const Sidebar = ({ folders = [], isOpen, onToggle }) => {
   const [expandedFolders, setExpandedFolders] = useState(true);
   const location = useLocation();
   
-  const navigationItems = [
+const navigationItems = [
     { name: "All Items", path: "/", icon: "Home" },
     { name: "Tasks", path: "/tasks", icon: "CheckSquare" },
     { name: "Notes", path: "/notes", icon: "FileText" },
-    { name: "Search", path: "/search", icon: "Search" },
   ];
   
   const toggleFolders = () => {
